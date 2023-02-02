@@ -35,7 +35,7 @@ export default function AccountDashboard({transcript,time}){
     useEffect(()=>{
         if(!account)return
         setbalance(0)
-        setclaimablebalance(0.000000)
+        setclaimablebalance(10000000.000000)
         setlast_modify(0)
         setsubentry(0)
 
@@ -93,7 +93,7 @@ export default function AccountDashboard({transcript,time}){
                 <div className={`${styles.balance} shadow w-full h-20 rounded-xl flex items-center justify-center`}>
                     <div className="flex justify-center items-center w-full px-2">
                         <FontAwesomeIcon icon={faCoins} className={styles.balance_icon+' ml-2'}/>
-                        <div className="block w-full pr-2">
+                       <div className="block w-full pr-2">
                             <div className={` ${styles.balance_block} leading-none ml-3 align-bottom font-mono font-bold break-words`}>{parseFloat(balance)} 
                                 <span className=" text-purple-500"> Pi</span>
                             </div>
